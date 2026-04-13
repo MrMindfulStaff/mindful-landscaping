@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import ServiceHighlights from "@/components/ServiceHighlights";
 import TrustBar from "@/components/TrustBar";
@@ -14,12 +15,20 @@ export default function Home() {
       <AboutBlurb />
 
       {/* CTA Banner */}
-      <section className="py-16 bg-gradient-to-r from-brand-green-dark to-brand-green">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-24 overflow-hidden">
+        <Image
+          src="/images/grass-closeup.jpg"
+          alt="Close-up of a lush, well-maintained green lawn"
+          fill
+          className="object-cover"
+          quality={80}
+        />
+        <div className="absolute inset-0 bg-brand-charcoal/70" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Ready to Transform Your Property?
           </h2>
-          <p className="mt-4 text-green-100 text-lg max-w-2xl mx-auto">
+          <p className="mt-4 text-gray-300 text-lg max-w-2xl mx-auto">
             Get a free, no-obligation estimate from Milwaukee&apos;s trusted
             landscaping team. We&apos;ll come to you.
           </p>
