@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ServiceCard from "@/components/ServiceCard";
+import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Services | Mindful Landscaping LLC",
@@ -54,18 +55,10 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      {/* Page Header */}
-      <section className="bg-gradient-to-br from-brand-green-dark to-brand-green py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white">
-            Our Services
-          </h1>
-          <p className="mt-4 text-green-100 text-lg max-w-2xl mx-auto">
-            Comprehensive lawn care and landscaping solutions for Milwaukee
-            homes and businesses.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        title="Our Services"
+        subtitle="Comprehensive lawn care and landscaping solutions for Milwaukee homes and businesses."
+      />
 
       {/* Services Grid */}
       <section className="py-20 bg-gray-50">

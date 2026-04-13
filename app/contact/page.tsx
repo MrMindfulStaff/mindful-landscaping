@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import QuoteForm from "@/components/QuoteForm";
+import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Get a Quote | Mindful Landscaping LLC",
@@ -10,18 +11,10 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      {/* Page Header */}
-      <section className="bg-gradient-to-br from-brand-green-dark to-brand-green py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white">
-            Get a Free Quote
-          </h1>
-          <p className="mt-4 text-green-100 text-lg max-w-2xl mx-auto">
-            Tell us about your property and we&apos;ll get back to you with an
-            honest estimate — usually within 24 hours.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        title="Get a Free Quote"
+        subtitle="Tell us about your property and we'll get back to you with an honest estimate — usually within 24 hours."
+      />
 
       {/* Form + Sidebar */}
       <section className="py-20 bg-gray-50">
