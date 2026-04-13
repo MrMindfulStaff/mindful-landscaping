@@ -17,8 +17,8 @@ export default function Home() {
       {/* CTA Banner */}
       <section className="relative py-24 overflow-hidden">
         <Image
-          src="/images/grass-closeup.jpg"
-          alt="Close-up of a lush, well-maintained green lawn"
+          src="/images/neighborhood-street.jpg"
+          alt="Beautiful residential home with a manicured green lawn"
           fill
           className="object-cover"
           quality={80}
