@@ -1,18 +1,14 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="relative text-white">
-      {/* Background image */}
-      <Image
-        src="/images/grass-closeup.jpg"
-        alt=""
-        fill
-        className="object-cover"
-        quality={70}
-      />
-      <div className="absolute inset-0 bg-brand-charcoal/85" />
+    <footer className="relative text-white bg-brand-charcoal overflow-hidden">
+      {/* Animated gradient waves */}
+      <div className="absolute inset-0">
+        <div className="cta-wave cta-wave-1" />
+        <div className="cta-wave cta-wave-2" />
+        <div className="cta-wave cta-wave-3" />
+      </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
